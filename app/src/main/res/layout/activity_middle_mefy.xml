@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.drms2.admin.adminME.adminMEFY.CropViewMEFY
+        android:id="@+id/cropView"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp" />
+
+    <ImageView
+        android:id="@+id/imageView_cropped"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:visibility="gone" /> <!-- Initially hidden -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_crop"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#E068F4"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Crop Image"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/main"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Send Image"
+            />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/main"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Clear" />
+
+    </LinearLayout>
+
+</LinearLayout>

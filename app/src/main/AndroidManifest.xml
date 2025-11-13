@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/drmsicon"
+        android:label="DRMS"
+        android:roundIcon="@drawable/drmsicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="ExtraText"
+        tools:targetApi="31">
+        <activity
+            android:name=".KPCSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.PrincipalSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.HODSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HODLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.METY.PrincipalTYMEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MESY.PrincipalSYMEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MEFY.PrincipalFYMEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJTY.PrincipalTYEJListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJSY.PrincipalSYEJListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJFY.PrincipalFYEJListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.TYMEReport.TYMEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.SYMEReport.SYMEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.FYMEReport.FYMEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.TYEJReport.TYEJListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.SYEJReport.SYEJListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.FYEJReport.FYEJListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMETY.AdminMETYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMESY.AdminMESYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMEFY.AdminMEFYLIstNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJTY.AdminEJTYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJSY.AdminEJSYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJFY.AdminEJFYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EETY.PrincipalEETYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EESY.PrincipalEESYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EEFY.PrincipalEEFYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.TYEEReport.TYEEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.SYEEReport.SYEEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.FYEEReport.FYEEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEETY.AdminEETYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEESY.AdminEESYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEEFY.AdminEEFYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMTY.PrincipalTYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMSY.PrincipalSYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMFY.PrincipalFYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.TYCMReport.TYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.SYCMReport.SYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.FYCMReport.FYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminTYCM.AdminTYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminSYCM.AdminSYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminFYCM.AdminFYCMListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CETY.PrincipalCETYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CESY.PrincipalCESYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.TYCivilReport.TYCivilListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.SYCivilReport.SYCivilListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.FYCivilReport.FyCivilOptionActivityListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCETY.AdminCETYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCESY.AdminCESYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CEFY.PrincipalCEFYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCEFY.AdminFYCEListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AETY.PrincipalAutoTYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.TYReport.TyAutoListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAETY.AdminAETYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AESY.PrincipalAESYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.SYReport.SyAutoListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAESY.AdminAESYListNotification"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.FYReport.FyAutoListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AEFY.FyAutoListNotificationsPrincipal"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAEFY.AdminAEFYListNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJFY.MiddleActivityEJFY"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMETY.MiddleActivityMETY"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMESY.MiddleActivityMESY"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMEFY.MiddleActivityMEFY"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJTY.MiddleActivityEJTY"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJSY.MiddleActivityEJSY"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEETY.MiddleActivityEETY"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEESY.MiddleActivityEESY"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEEFY.MiddleActivityEEFY"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.TYMEReport.ViewTodayReportbyMETYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.SYMEReport.ViewTodayReportbyMESYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.FYMEReport.ViewTodayReportbyMEFYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.TYEEReport.ViewTodayReportbyEETYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.SYEEReport.ViewTodayReportbyEESYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.FYEEReport.ViewTodayReportbyEEFYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.TYEJReport.ViewTodayReportbyEJTYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.SYEJReport.ViewTodayReportbyEJSYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.FYEJReport.ViewTodayReportbyEJFYHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.TYCMReport.ViewTodaysReportByTYCMHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.SYCMReport.ViewTodaysReportBySYCMHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.FYCMReport.ViewTodaysReportByFYCMHOD"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminTYCM.MiddleActivityTYCM"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminSYCM.MiddleActivitySYCM"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminFYCM.MiddleActivityFYCM"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.TYCivilReport.ViewTodayReportByTYCEHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.SYCivilReport.ViewTodayReportBYSYCEHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.FYCivilReport.ViewTodayReportByFYCEHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.TYReport.ViewTodayReportBYTYAEHOD"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.SYReport.ViewTodayReportBySYAEHOD"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCETY.MiddleActivityTYCE"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCESY.MiddleActivitySYCE"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCEFY.MiddleActivityFYCE"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAESY.MiddleActivitySYAE"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.FYReport.ViewTodayReportFYAEHOD"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAEFY.MiddleActvivityFYAE"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMETY.TYMEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMESY.SYMEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMEFY.FYMEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMETY.AdminMETYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMESY.AdminMESYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMEFY.AdminMEFYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJTY.AdminTYEJOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJSY.AdminSYEJOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJFY.AdminFYEJOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEETY.AdminEETYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEESY.AdminEESYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEEFY.AdminEEFYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminTYCM.AdminTYCMOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminSYCM.AdminSYCMOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminFYCM.AdminFYCMOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCETY.AdminCETYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCESY.AdminCESYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCEFY.AdminCEFYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAETY.AdminAETYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAESY.AdminAESYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAEFY.AdminAEFYOptions"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJTY.TYEJFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJSY.SYEJFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJFY.FYEJFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEETY.TYEEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEESY.SYEEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEEFY.FYEEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminTYCM.TYCMFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminSYCM.SYCMFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminFYCM.FYCMFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCETY.TYCEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCESY.SYCEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCEFY.FYCEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAETY.TYAEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAESY.SYAEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAEFY.FYAEFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMETY.AdminTYMENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMESY.AdminSYMENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMEFY.AdminFYMENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJTY.AdminTYEJNewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJSY.AdminSYEJNewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJFY.AdminFYEJNewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEETY.AdminTYEENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEESY.AdminSYEENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEEFY.AdminFYEENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminTYCM.AdminTYCMNewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminSYCM.AdminSYCMNewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminFYCM.AdminFYCMNewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCETY.AdminTYCENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCESY.AdminSYCENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCEFY.AdminFYCENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAETY.AdminTYAENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAESY.AdminSYAENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAEFY.AdminFYAENewReport"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMETY.AdminTYMEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMESY.AdminSYMEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.adminMEFY.AdminFYMEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJTY.AdminEJTYHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJSY.AdminEJSYHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.adminEJFY.AdminFYEJHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEETY.AdminTYEEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEESY.AdminEESYHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.adminEEFY.AdminFYEEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminTYCM.AdminTYCMHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminSYCM.AdminSYCMHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCM.adminFYCM.AdminFYCMHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCETY.AdminTYCEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCESY.AdminSYCEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.adminCEFY.AdminFYCEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAETY.AdminTYAEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAESY.AdminSYAEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.adminAEFY.AdminFYAEHistory"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminAE.MainActivityAE"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminCE.MainActivityCE"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminME.MainActivityMe"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEE.MainActivityEE"
+            android:exported="false" />
+        <activity
+            android:name=".admin.adminEJ.MainActivityEJ"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.METY.PrincipalMETyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MESY.PrincipalMESyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MEFY.PrincipalMEFyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJTY.PrincipalJTyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJSY.PrincipalEJSyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJFY.PrincipalEJFyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EETY.PrincipalEETyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EESY.PrincipalEESyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EEFY.PrincipalEEFyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMTY.PrincipalCMTyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMSY.PrincipalCMSyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMFY.PrincipalCMFyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CETY.PrincipalCETyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CESY.PrincipalCESyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CEFY.PrincipalCEFyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AETY.PrincipalAETyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AESY.PrincipalAESyOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AEFY.PrincipalAEFYOption"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CESY.ViewTodayReportCESy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CESY.ViewHistoryCESy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CESY.ViewFeedbackCESy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CEFY.ViewTodayReportCEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CEFY.ViewHistoryCEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CEFY.ViewFeedbackCEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CETY.ViewFeedbackCETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CETY.ViewHistoryCETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CE.CETY.ViewTodayReportCETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AETY.ViewTodayReportAutoTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AETY.ViewFeedbackAutoTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AETY.ViewHistoryAutoTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AESY.ViewTodayReportAutoSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AESY.ViewHistoryAutoSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AESY.ViewFeedbackAutoSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AEFY.ViewTodayReportAutoFirst"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AEFY.ViewHistoryAutoFirst"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AE.AEFY.ViewFeedbackAutoFirst"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMFY.ViewFeedbackCMFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMFY.ViewHistoryCMFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMFY.ViewTodayReportCMFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMSY.ViewFeedbackCMSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMSY.ViewHistoryCMSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMSY.ViewTodayReportCMSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMTY.ViewFeedbackCMTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMTY.ViewHistoryCMTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CM.CMTY.ViewTodayReportCMTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EEFY.ViewTodayReportEEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EEFY.ViewFeedbackEEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EEFY.ViewHistoryEEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EESY.ViewFeedbackEESy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EESY.ViewHistoryEESy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EETY.ViewHistoryEETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EETY.ViewFeedbackEETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EETY.ViewTodayReportEETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MEFY.ViewTodayReportMEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MEFY.ViewFeedbackMEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MEFY.ViewHistoryMEFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MESY.ViewTodayReportMESy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MESY.ViewFeedbackMESy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.MESY.ViewHistoryMESy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.METY.ViewHistoryMETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.METY.ViewFeedbackMETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ME.METY.ViewTodayReportMETy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJFY.ViewTodayReportEJFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJFY.ViewFeedbackEJFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJFY.ViewHistoryEJFy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJSY.ViewTodayReportEJSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJSY.ViewFeedbackEJSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJSY.ViewHistoryEJSy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJTY.ViewHistoryEJTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJTY.ViewFeedbackEJTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJ.EJTY.ViewTodayReportEJTy"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EJOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.AEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.MEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EEoptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.CMOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.PrincipalDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.FYReport.FyAutoOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.SYReport.SyAutoOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.TYReport.TyAutoOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.FYReport.FYAutoHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.SYReport.SYAutoHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.AutoHOD.TYReport.TYAutoHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.FYEEReport.FyEEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.SYEEReport.SyEEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.TYEEReport.TyEEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.FYEEReport.FYEEHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.SYEEReport.SYEEHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EleHOD.TYEEReport.TYEEHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.FYMEReport.FyMEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.SYMEReport.SyMEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.TYMEReport.TyMEOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.FYMEReport.FYMEHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.SYMEReport.SYMEHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MEHOD.TYMEReport.TYMEHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.FYCivilReport.FyCivilOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.SYCivilReport.SyCivilOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.TYCivilReport.TyCivilOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.FYCivilReport.FYCivilHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.SYCivilReport.SYCivilHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CivilHOD.TYCivilReport.TYCivilHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.FYEJReport.FyEJOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.SYEJReport.SyEJOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.TYEJReport.TyEJOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.FYEJReport.FYEJHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.SYEJReport.SYEJHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.EJHOD.TYEJReport.TYEJHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.FYCMReport.FyCMOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.FYCMReport.FYCMHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.SYCMReport.SYCMHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.TYCMReport.TYCMHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.SYCMReport.SyCMOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.CMHOD.TYCMReport.TyCMOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hod.MainHODDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.FeedBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.ViewReportsByPrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".principal.EE.EESY.ViewTodayReportEESy"
+            android:exported="false" />
+        <activity
+            android:name=".MainLoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin.FetchReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.HistoryLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AutoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ElectronicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.MechanicalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.CivilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ElectricalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ComputerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.BranchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

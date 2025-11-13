@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/main"
+    android:padding="16dp"
+    tools:context=".HODLoginActivity">
+
+    <!-- Login Logo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoo" /> <!-- replace with your logo image -->
+
+    <!-- Username TextView -->
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Username EditText -->
+    <!-- Custom border for EditText -->
+
+    <!-- Password TextView -->
+    <EditText
+        android:id="@+id/etxtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="700dp"
+        android:layout_marginLeft="700dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Enter Username"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="15pt"
+        android:textStyle="bold"
+
+        android:layout_marginTop="16dp" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/etxtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_marginLeft="700dp"
+        android:layout_marginRight="700dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:inputType="textPassword" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="800dp"
+        android:layout_marginRight="800dp"
+        android:text="Login"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:layout_marginTop="30dp"
+        android:padding="10pt"
+        android:onClick="btnLogClick"/>
+    <Button
+        android:id="@+id/btnHODSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="800dp"
+        android:layout_marginRight="800dp"
+        android:text="Sign-up"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:layout_marginTop="30dp"
+        android:padding="10pt"
+        android:onClick="btnLogClick"/>
+
+</LinearLayout>

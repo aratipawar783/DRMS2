@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/main"
+    android:padding="16dp"
+    tools:context=".admin.AdminSignUpActivity">
+
+    <!-- Login Logo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoo" /> <!-- replace with your logo image -->
+
+
+        <EditText
+            android:id="@+id/etxtUser"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="80dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Enter Username"
+            android:padding="12dp" />
+
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/etxtPassword"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+    <EditText
+        android:id="@+id/etxtConfirmPassword"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+
+    <Button
+        android:id="@+id/btnAdminSign"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="800dp"
+        android:layout_marginRight="800dp"
+        android:text="Sign-up"
+        android:backgroundTint="@color/purple_700"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:layout_marginTop="30dp"
+
+        />
+
+</LinearLayout>

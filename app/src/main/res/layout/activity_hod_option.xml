@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ListView
+        android:id="@+id/menuListView"
+        android:layout_width="match_parent"
+        android:divider="@color/black"
+        android:dividerHeight="3dp"
+        android:footerDividersEnabled="true"
+        android:listSelector="#5DA8E4"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/sendNotificationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main"
+        android:text="Accept Report"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/rejectReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reject Report"
+        android:backgroundTint="@color/main"
+        android:layout_marginTop="30dp"/>
+
+    <!-- ImageButton to display received notifications -->
+    <ImageButton
+        android:id="@+id/displayNotificationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/msg"
+        android:contentDescription="image"
+        android:layout_marginTop="30dp"/>
+    <ListView
+        android:id="@+id/notificationListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"/>
+
+    <!-- ListView to display notifications -->
+
+
+</LinearLayout>

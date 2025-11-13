@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".principal.PrincipalDashboardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="100dp"
+        android:layout_weight="0.6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:orientation="horizontal"
+            android:background="@color/main"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:contentDescription="Computer"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white"
+                android:onClick="btnComputerClick">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/computer"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                app:cardElevation="8dp"
+                android:contentDescription="Computer"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnElectronicClick">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/electronic"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:contentDescription="Computer"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnElectricalClick">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/electrical"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:background="@color/main"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:contentDescription="Computer"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnCivilClick">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/civil"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:contentDescription="Computer"
+                android:layout_margin="5dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnMechanicalClick">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="240dp"
+                    android:src="@drawable/mechanical"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:contentDescription="Computer"
+                android:layout_margin="5dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnAutomobileClick">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/auto"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".admin.adminAE.adminAEFY.AdminFYAENewReport"
+    android:padding="20sp"
+    android:id="@+id/main"
+    android:background="#9E71E5F4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="20sp"
+                android:stretchColumns="0,1,2,3,4,5,6,7">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="New Report:"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="16dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvStudInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Student Info:"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tvGetStudInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="GET Student Info:"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tvSrNo"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_border"
+                        android:text="Sr. No"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/tvSession"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:text="Session"
+                        />
+                    <TextView
+                        android:id="@+id/tvSubjectName"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent"
+                        android:text="Subject Name"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+
+                        android:textAlignment="center"
+                        android:id="@+id/tvSubjectTeacher"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center"
+
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_border"
+                        android:text="Subject Teacher"
+                        />
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/tvAdjustedConducted"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_border"
+                        android:text="Adjusted/Conducted"
+                        />
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/tvSyllabusContents"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:text="Syllabus Contents"
+                        />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/tvRating"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:text="Rating"
+                        />
+                </TableRow>
+
+                <!-- Row 1 -->
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvRollNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Roll No:"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:layout_marginBottom="8dp"/>
+                    <EditText
+                        android:id="@+id/etRollNo"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:hint="Enter Roll No"
+                        android:padding="16dp"
+                        android:background="@drawable/edittext_border"
+                        android:layout_marginBottom="16dp"/>
+                    <TextView
+                        android:id="@+id/tvSrNo1"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvSession1"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="8:30 To 9:30"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+
+
+
+
+                    <EditText
+                        android:id="@+id/et1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <EditText
+                        android:id="@+id/et2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_border"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+
+                    <EditText
+                        android:id="@+id/et3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:background="@drawable/edittext_border"
+                        android:inputType="text"
+                        />
+
+                    <EditText
+                        android:id="@+id/et4"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <RatingBar
+                        android:id="@+id/etRating1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:numStars="4"
+                        android:background="@drawable/edittext_border"
+                        android:stepSize="1.0"
+                        />
+
+
+                </TableRow>
+
+                <!-- Row 2 -->
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvEnroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:text="Enrollment No:"
+                        android:layout_marginBottom="8dp"/>
+
+
+
+                    <EditText
+                        android:id="@+id/etEnroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:hint="Enter Enrollment Number"
+                        android:textSize="10pt"
+                        android:background="@drawable/edittext_border"
+                        android:padding="16dp"
+                        android:layout_marginBottom="16dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tvSrNo2"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvSession2"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="9.30 To 10:30"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <EditText
+                        android:id="@+id/et5"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <EditText
+                        android:id="@+id/et6"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <EditText
+                        android:id="@+id/et7"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <EditText
+                        android:id="@+id/et8"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <RatingBar
+                        android:id="@+id/etRating2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:numStars="4"
+                        android:background="@drawable/edittext_border"
+                        android:stepSize="1.0"
+                        />
+                </TableRow>
+                <!-- Row 3 - Merged Cells for SHORT BREAK -->
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvStudentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:text="Student Name:"
+                        android:layout_marginBottom="8dp"/>
+
+
+
+                    <EditText
+                        android:id="@+id/etStudentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:hint="Student Name"
+                        android:layout_marginRight="20dp"
+                        android:textSize="10pt"
+                        android:background="@drawable/edittext_border"
+                        android:padding="16dp"
+                        android:layout_marginBottom="16dp"/>
+                    <TextView
+                        android:id="@+id/tvSrNo3"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvSession3"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="10:30 To 10:45"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvShortBreak"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:text="SHORT BREAK"
+                        android:textStyle="bold"
+                        android:padding="10sp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:layout_span="5"
+                        />
+                </TableRow>
+
+                <!-- Row 4 -->
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:text="Date:"
+                        android:layout_marginBottom="8dp"/>
+
+                    <EditText
+                        android:id="@+id/etDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Enter Todays Date"
+                        android:background="@drawable/edittext_border"
+                        android:padding="12dp"
+                        android:inputType="date"
+                        android:layout_marginBottom="16dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tvSrNo4"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvSession4"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="10:45 To 11:45"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <EditText
+                        android:id="@+id/et9"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <EditText
+                        android:id="@+id/et10"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <EditText
+                        android:id="@+id/et11"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <EditText
+                        android:id="@+id/et12"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <RatingBar
+                        android:id="@+id/etRating3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:numStars="4"
+                        android:background="@drawable/edittext_border"
+                        android:stepSize="1.0"
+                        />
+                </TableRow>
+
+                <!-- Row 5 -->
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvAbsentStudents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="Absent Students:"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:layout_marginBottom="8dp"/>
+
+                    <EditText
+                        android:id="@+id/etAbsentStudents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:hint="  Enter Absent Students"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:inputType="text"
+                        android:background="@drawable/edittext_border"
+                        android:layout_marginBottom="16dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tvSrNo5"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvSession5"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="11:45 To 12:45"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <EditText
+                        android:id="@+id/et13"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <EditText
+                        android:id="@+id/et14"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+
+                    <EditText
+                        android:id="@+id/et15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_border"
+                        android:hint="..."
+                        android:inputType="text" />
+                    <EditText
+                        android:id="@+id/et16"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <RatingBar
+                        android:id="@+id/etRating4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:numStars="4"
+                        android:background="@drawable/edittext_border"
+                        android:stepSize="1.0"
+                        />
+                </TableRow>
+
+                <!-- Row 6 - Merged Cells for LUNCH BREAK -->
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvCC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="Class Teacher Name:"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:layout_marginBottom="8dp"/>
+
+                    <EditText
+                        android:id="@+id/etCC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:hint="  Enter Class Teacher Name"
+                        android:layout_marginLeft="25dp"
+                        android:inputType="text"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/edittext_border"
+                        android:layout_marginBottom="16dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tvSrNo6"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="6"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvSession6"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="12:45 To 1:30"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvLunchBreak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_span="5"
+                        android:padding="10sp"
+                        android:background="@drawable/edittext_border"
+                        android:textAlignment="center"
+                        android:text="LUNCH BREAK"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <!-- Row 7 -->
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvHOD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="HOD Name:"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:layout_marginBottom="8dp"/>
+
+                    <EditText
+                        android:id="@+id/etHOD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:hint="  Enter HOD Name"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:inputType="text"
+                        android:background="@drawable/edittext_border"
+                        android:layout_marginBottom="16dp"/>
+                    <TextView
+                        android:id="@+id/tvSrNo7"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="7"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvSession7"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="1:30 To 2:30"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <EditText
+                        android:id="@+id/et17"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text" />
+                    <EditText
+                        android:id="@+id/et18"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"/>
+                    <EditText
+                        android:id="@+id/et19"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text" />
+                    <EditText
+                        android:id="@+id/et20"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <RatingBar
+                        android:id="@+id/etRating5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:numStars="4"
+                        android:background="@drawable/edittext_border"
+                        android:stepSize="1.0"
+                        />
+
+                </TableRow>
+
+                <!-- Row 8 -->
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvBranch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="Branch Name:"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="10pt"
+                        android:layout_marginBottom="8dp"/>
+
+                    <EditText
+                        android:id="@+id/etBranch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:hint="  Enter Branch "
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="text"
+                        android:background="@drawable/edittext_border"
+                        android:layout_marginBottom="16dp"/>
+                    <TextView
+                        android:id="@+id/tvsrNo8"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="8"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <TextView
+                        android:id="@+id/tvSession8"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="2:30 To 3:30"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/edittext_border"
+                        />
+                    <EditText
+                        android:id="@+id/et21"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"
+                        />
+                    <EditText
+                        android:id="@+id/et22"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text" />
+                    <EditText
+                        android:id="@+id/et23"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text"/>
+                    <EditText
+                        android:id="@+id/et24"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/edittext_border"
+                        android:layout_height="match_parent"
+                        android:hint="..."
+                        android:inputType="text" />
+                    <RatingBar
+                        android:id="@+id/eRating6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:numStars="4"
+                        android:background="@drawable/edittext_border"
+                        android:stepSize="1.0"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="150dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp">
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_height="48dp"
+                        android:text="Agree"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:onClick="saveReport"
+                        android:background="#2B1257"
+                        android:layout_marginRight="20dp"
+                        tools:ignore="OnClick" />
+                    <Button
+                        android:id="@+id/takeScreenshotButton"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="48dp"
+                        android:background="#2B1257"
+                        android:text="Take Screenshot" />
+
+
+
+
+
+                </TableRow>
+
+
+                <!-- Existing layout code... -->
+
+                <!-- Add this FrameLayout for the ImageView -->
+
+                <!-- Existing layout code... -->
+
+            </TableLayout>
+
+
+            <!-- Button to clear the notification -->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Report"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etRollNo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Enter Roll Number"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Date (YYYY-MM-DD)" />
+
+    <Button
+        android:id="@+id/btnFetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Report"
+        android:backgroundTint="@color/main"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Report"
+        android:backgroundTint="@color/main"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Report"
+        android:backgroundTint="@color/main"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Student Information"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Student Info."
+
+                        android:backgroundTint="@color/main"
+                        android:background="@drawable/edittext_border"
+                        android:padding="8dp"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Get Student Info."
+                        android:backgroundTint="@color/main"
+                        android:background="@drawable/edittext_border"
+                        android:padding="8dp"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SR.No"
+                        android:backgroundTint="@color/main"
+                        android:background="@drawable/edittext_border"
+                        android:padding="8dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Session"
+                        android:padding="8dp"
+                        android:backgroundTint="@color/main"
+                        android:background="@drawable/edittext_border"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject Name"
+                        android:backgroundTint="@color/main"
+                        android:background="@drawable/edittext_border"
+                        android:padding="8dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject Teacher"
+                        android:backgroundTint="@color/main"
+                        android:background="@drawable/edittext_border"
+                        android:padding="8dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adjusted Conducted"
+                        android:padding="8dp"
+                        android:backgroundTint="@color/main"
+                        android:background="@drawable/edittext_border"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Syllabus Contents"
+                        android:backgroundTint="@color/main"
+                        android:background="@drawable/edittext_border"
+                        android:padding="8dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:backgroundTint="@color/main"
+                        android:layout_height="wrap_content"
+                        android:text="Rating"
+                        android:background="@drawable/edittext_border"
+                        android:padding="8dp"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Report"
+        android:backgroundTint="@color/main"/>
+
+    <!-- Additional rows will be added dynamically in the activity -->
+
+</LinearLayout>

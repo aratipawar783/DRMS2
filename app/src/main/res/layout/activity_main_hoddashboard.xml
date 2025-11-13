@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainDashboardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="100dp"
+        android:background="@color/white"
+        android:layout_weight="0.6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="@color/main"
+                app:cardCornerRadius="8dp"
+                android:layout_gravity="center"
+                android:contentDescription="HOD OF COMPUTER TECHNOLOGY "
+                app:cardBackgroundColor="@color/white"
+                android:onClick="btnCMClick">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:backgroundTint="@color/main"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="HOD                                       (Computer Technology)"
+                    android:textSize="20pt"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="@color/main"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnEJClick">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:backgroundTint="@color/main"
+                    android:gravity="center"
+                    android:text="HOD                                 (Electronics and Telecommunication)"
+                    android:textColor="@color/white"
+                    android:textSize="20pt"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/main"
+                android:padding="15dp"
+
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnMeClick">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:backgroundTint="@color/main"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="HOD                     (Mechanical Engineering)"
+                    android:textSize="20pt"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/main"
+                android:layout_margin="5dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_gravity="center"
+                android:contentDescription="HOD  (COMPUTER TECHNOLOGY)"
+                android:onClick="btnEleClick">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/main"
+                    android:text="HOD                              (Electrical Engineering)"
+                    android:textSize="20pt"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/main"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnAutoClick">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:backgroundTint="@color/main"
+                    android:textColor="@color/white"
+                    android:text="HOD                                 (Automobile Engineering)"
+                    android:textSize="20pt"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="@color/main"
+                app:cardCornerRadius="8dp"
+                android:onClick="btnCivilClick">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="HOD                                                   (Civil Engineering)"
+                    android:textSize="20pt"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
